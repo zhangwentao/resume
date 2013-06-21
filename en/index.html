@@ -12,8 +12,9 @@
 			html{color:#333;background:#FFF;direction:ltr;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
 
 			html {
+				font-family: Arial,sans-serif;
 				background-color: #f5f5f5;
-				letter-spacing: 2px;
+				font-size: 15px;
 			}
 
 			.resume {
@@ -25,55 +26,25 @@
 				box-shadow:	2px 2px 8px #aaa;
 			}
 
-			.personal-info {
-				padding: 0;
-			}
-
+			li.company,
 			.personal-info li {
 				list-style-type: none;	
 			}
 
-			.personal-info .name {
-				font-size: 46px;
-				font-weight: bold;
-				letter-spacing: 5px;
-			}
-
-			p {
-				text-indent: 2em;
-				margin-bottom: 10px;
-				text-align: justify;
-			}
-
 			li {
-				list-style-type: disc;
-			}
-
-			li.company {
-				list-style-type: none;
+				list-style: disc inside;
 			}
 
 			h1,h2,h3,h4,h5,h6 {
 				font-weight: bold;
+			}
+			
+			h2 {
 				margin: 14px 0 3px 0;
 			}
 
-			h2 {
-				font-size: 18px;
-			}
-
 			h3 {
-				font-size: 16px;
-				margin-top: 4px;
-			}
-
-			h1 {
-				font-size: 20px;
-			}
-
-			ul {
-				margin-top: 2px;
-				padding-left: 40px;
+				margin-top: 5px;
 			}
 
 			ul.professional {
@@ -82,15 +53,16 @@
 
 			span.time {
 				float: right;
-				font-family: sans-serif;
 			}
 
 			p.position {
-				position: relative;
-				margin: 2px 0 0;
-				text-indent: 1em;
+				margin-top: 4px;
+				font-weight: bold;
 			}
 
+			p.university {
+				font-style: italic;
+			}
 		</style>
 	</head>
 	<body>
@@ -131,43 +103,44 @@
 				</ul>
 				</li>
 				<li class="company">
-				<h3>renren.com</h3>
-				<p class="position">web front-end development engineer <span class="time">2012.4-2012.9</span></p>
-				<ul>
-					<li> front-end development in Social Wiki project</li>
-				</ul>
-				<p class="position">flash as3 development engineer <span class="time">2010.7-2011.3</span> </p>
-				<ul>
-					<li>Flash online interactive activities developed</li>
-					<li>Flash product maintenance</li>
-					<li>RENREN Music mp3 player generic module design and development</li>
-					<li>RENREN Album flash upload component design and development</li>
-					<li>RENREN Widget design and development</li>
-				</ul>
+					<h3>renren.com</h3>
+					<p class="position">web front-end development engineer <span class="time">2012.4-2012.9</span></p>
+					<ul>
+						<li> front-end development in Social Wiki project</li>
+					</ul>
+					<p class="position">flash as3 development engineer <span class="time">2010.7-2011.3</span> </p>
+					<ul>
+						<li>Flash online interactive activities developed</li>
+						<li>Flash product maintenance</li>
+						<li>renren music mp3 player generic module design and development</li>
+						<li>renren album flash upload component design and development</li>
+						<li>renren widget design and development</li>
+					</ul>
 				</li>
 				<li class="company">
-				<h3>DT Education</h3>
-				<p class="position">flash as3 development engineer <span class="time">2009.3-2010.6</span></p>
-				<ul>
-					<li>Book flip effect module development</li>
-					<li>EBook interactive development</li>
-					<li>JSFL script tool for development</li>
-				</ul>
+					<h3>DT Education</h3>
+					<p class="position">flash as3 development engineer <span class="time">2009.3-2010.6</span></p>
+					<ul>
+						<li>Book flip effect module development</li>
+						<li>EBook interactive development</li>
+						<li>JSFL script tool for development</li>
+					</ul>
 				</li>
 			</ul>
-			<h2>Educational Background</h2>
+			<h2>TERTIARY QUALIFICATIONS</h2>
 			<p class="position">Bachelor of Computer Science and Technology <span class="time">2005.9-2009.7</span></p>
-			<p>Beijing Institute of Graphic Communication</p>
-			<h2>Personal interest</h2>
+			<p class="university">Beijing Institute of Graphic Communication</p>
+			<h2>PERSONAL INTEREST</h2>
 			<ul>
-				<li>Likes to explore technology and ideas behind the technology to see the original English technical books and documents.</li>
-				<li>Preference for modular development, likes to do things easily reuse and maintenance.</li>
-				<li>Like ubuntu linux system and is used for daily use and development.</li>
+				<li>Likes to explore technology and ideas behind the technology.</li>
+				<li>Read the original English technical books and documents.</li>
+				<li>Preference for modular development, likes to make things easily reuse and maintenance.</li>
+				<li>Like ubuntu linux system and used it for daily use and development.</li>
 				<li>Do not like rigid repetitive tasks.</li>
-				<li>Willing to learn new technologies (such as: write your own <a href="https://github.com/zhangwentao/wentao_blog" target="_blank">blog program</a> and <a href="https://github.com/zhangwentao/accountbook" target="_blank">online bookkeeping tool</a> ).</li>
-				<li>Do practical interesting applications.</li>
-				<li>Like sports: long-distance running, swimming</li>
-				<li>Photography</li>
+				<li>Willing to learn new technologies.</li>
+				<li>Make practical interesting applications(such as: write my <a href="https://github.com/zhangwentao/wentao_blog" target="_blank">blog program</a> and <a href="https://github.com/zhangwentao/accountbook" target="_blank">online bookkeeping tool</a> ).</li>
+				<li>Sports: long-distance running, swimming.</li>
+				<li>Photography.</li>
 			</ul>
 		</div>
 	</body>
