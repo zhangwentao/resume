@@ -12,8 +12,9 @@
 			html{color:#333;background:#FFF;direction:ltr;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
 
 			html {
+				font-family: Arial,sans-serif;
 				background-color: #f5f5f5;
-				letter-spacing: 2px;
+				font-size: 15px;
 			}
 
 			.resume {
@@ -25,70 +26,56 @@
 				box-shadow:	2px 2px 8px #aaa;
 			}
 
-			.personal-info {
-				padding: 0;
+			li {
+				list-style: disc inside;
 			}
 
+			li.name {
+				font-size: 30px;
+				font-weight: bold;
+				letter-spacing: 2px;
+			}
+
+			li.company,
 			.personal-info li {
 				list-style-type: none;	
 			}
 
-			.personal-info .name {
-				font-size: 46px;
-				font-weight: bold;
-				letter-spacing: 5px;
-			}
-
-			p {
-				text-indent: 2em;
-				margin-bottom: 10px;
-				text-align: justify;
-			}
-
-			li {
-				list-style-type: disc;
-			}
-
-			li.company {
-				list-style-type: none;
-			}
-
 			h1,h2,h3,h4,h5,h6 {
 				font-weight: bold;
+			}
+			
+			h2 {
 				margin: 14px 0 3px 0;
 			}
 
-			h2 {
-				font-size: 18px;
-			}
-
 			h3 {
-				font-size: 16px;
-				margin-top: 4px;
+				margin-top: 5px;
 			}
-
-			h1 {
-				font-size: 20px;
-			}
-
+			
 			ul {
-				margin-top: 2px;
-				padding-left: 40px;
+				padding-left: 4px;
 			}
 
 			ul.professional {
-				padding-left: 20px;
+				padding-left: 10px;
 			}
-
+			
 			span.time {
 				float: right;
-				font-family: sans-serif;
 			}
 
+			p.career-objective {
+				text-indent: 2em;
+			}
+			
 			p.position {
-				position: relative;
-				margin: 2px 0 0;
-				text-indent: 1em;
+				margin-top: 4px;
+				font-weight: bold;
+			}
+
+			p.university {
+				font-style: italic;
 			}
 
 		</style>
@@ -103,7 +90,7 @@
 				<li>github: <a href="https://github.com/zhangwentao" target="_blank">https://github.com/zhangwentao</a></li>
 			</ul>
 			<h2>职业目标</h2>
-			<p>
+			<p class="career-objective">
 				利用自己程序设计和开发方面的知识和技能加上一点产品和交互设计上的想法，写出模块化、易维护的代码，构建实用有趣的应用。为用户和雇主创造价值，同时也为家庭带来良好的生活条件。
 			</p>
 			<h2>技术能力</h2>
