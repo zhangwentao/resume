@@ -27,6 +27,21 @@
 				box-shadow:	2px 2px 8px #aaa;
 			}
 
+			@media print {
+				html {
+					background-color: #fff;
+				}
+				.resume {
+					padding-top: 40px;
+					background-color: #fff;
+					border: none;
+					box-shadow:	none !important;
+				}
+				a.language-switch {
+					display: none !important;
+				}
+			}
+
 			li {
 				list-style: disc inside;
 			}
