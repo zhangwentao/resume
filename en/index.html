@@ -198,7 +198,7 @@
 		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script>
 			$(function(){
-				$('#age').html(Math.floor((new Date() - new Date('1987-7'))/1000/60/60/24/365));
+				$('#age').html(new Date().getFullYear() - 1987);
 			});
 		</script>
 	</body>
