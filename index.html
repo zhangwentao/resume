@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<link href="./icon.ico" rel="shortcut icon">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="./icon.ico" rel="shortcut icon"/>
 		<style>
 			/*
 			Copyright (c) 2009, Yahoo! Inc. All rights reserved.
@@ -27,6 +29,16 @@
 				box-shadow:	2px 2px 8px #aaa;
 			}
 
+			@media (max-width:700px) {
+				.resume {
+					padding: 20px 10px 20px;
+					margin: 0;
+					width: auto;
+					background-color: #fff;
+					border: none;
+				}
+			}
+
 			@media print {
 				html {
 					background-color: #fff;
@@ -43,10 +55,10 @@
 			}
 
 			li {
-				list-style: disc inside;
+				list-style: circle inside;
 			}
 
-			li.name {
+			h1.name {
 				font-size: 30px;
 				font-weight: bold;
 				letter-spacing: 2px;
@@ -75,6 +87,9 @@
 			}
 
 			ul.professional {
+				padding-left: 10px;
+			}
+			ul.professional ul {
 				padding-left: 10px;
 			}
 			
@@ -114,8 +129,8 @@
 	</head>
 	<body>
 		<div class="resume">
+			<h1 class="name">张文韬</h1>
 			<ul class="personal-info">
-				<li class="name">张文韬</li>
 				<li>性别: 男</li>
 				<li>年龄: <span id="age">--</span></li>
 				<li>籍贯: 北京</li>
@@ -130,9 +145,10 @@
 			</p>
 			<h2>技术能力</h2>
 			<ul>
-				<li>专业的HTML、CSS、JavaScript知识</li>
-				<li>熟悉使用requireJS、LESS、nodeJS、bootstrap</li>
+				<li>掌握HTML、CSS、JavaScript知识</li>
+				<li>熟悉使用RequireJS、less、Node.js、Bootstrap、jQuery</li>
 				<li>熟悉python语言和django框架</li>
+				<li>熟悉java 语言和面向对象思想</li>
 				<li>熟练git和svn的基本使用</li>
 				<li>熟悉linux操作系统和bash的使用</li>
 				<li>良好的面向对象解决问题的能力</li>
@@ -147,48 +163,72 @@
 					<h3>正和岛</h3>
 					<p class="position">web前端开发工程师<span class="time">2012.11-今</span></p>
 					<ul>
-						<li>前端架构重构</li>
-						<li>页面重构</li>
-						<li>线上产品维护</li>
-						<li>混合模式移动应用开发
+						<li>hybrid移动应用 及 移动端web应用开发
 							<ul>	
 								<li>
-									<a href="http://act.zhisland.com/huodong" target="_blank">活动圈</a>
-								</li>
-							</ul>
-						</li>
-						<li>WebApp 开发
-							<ul>	
-								<li>
+									<a href="http://www.zhisland.com/bms-api-app/html/download.html" target="_blank">正和岛 APP</a>
 									<a href="http://act.zhisland.com/index.php?app=mob&mod=event&act=index" target="_blank">活动圈</a>
+									<p>
+										负责项目中的全部前端开发，包括前端目录结构设计。html，css，javascript。使用RequireJs作为javascript模块化工具，less 作为 css 模块化工具，使用 gulp 作为构建工具进行 js 的文件合并和 less 编译及合并。列表数据使用前端模板引擎（<a href="http://paularmstrong.github.io/swig/" target="_blank">swig</a>）渲染。
+									</p>
 								</li>
 							</ul>
 						</li>
-						<li>运营管理后台</li>
+						<li>运营管理后台
+							<p>
+								负责项目中的全部前端开发，使用第三方 Bootstrap 框架（<a href="https://almsaeedstudio.com/preview" target="_blank">AdminLTE</a>)编写前后端通用数据通讯函数，进行通用的异常处理。使用 Bootstrap js 组件优化用户交互。
+							</p>
+						</li>
 					</ul>
 				</li>
 				<li class="company">
 					<h3>人人网</h3>
 					<p class="position">web前端开发工程师 <span class="time">2012.4-2012.9</span></p>
 					<ul>
-						<li>Social Wiki 项目前端开发</li>
+						<li>Social Wiki 
+							<p>
+								负责前端html，css，javascript 编写。
+							</p>
+						</li>
 					</ul>
 					<p class="position">flash as3 开发工程师 <span class="time">2010.7-2012.3</span> </p>
 					<ul>
-						<li>线上活动flash交互开发</li>
-						<li>线上flash产品维护</li>
-						<li>人人音乐mp3播放通用模块设计开发</li>
-						<li>人人相册flash上传组件设计开发</li>
-						<li>人人widget设计开发</li>
+						<li>线上flash产品维护，通过对原有flash程序代码或反编译后的代码阅读，解决出现的bug或开发新功能。
+						</li>
+						<li>线上活动flash交互开发
+							<p>
+								负责互动页面中 flash 交互部分的开发及flash 与前端 js 的通讯，配合设计师实现动画交互效
+							</p>
+						</li>
+						<li>人人音乐mp3播放通用模块设计开发
+							<p>
+								负责设计编写通用 mp3 音频播放模块，为前端提供音频播放功能，其中包括一个对flash 与其所在页面进行通讯的接口的优化,通过观察者模式，进行 flash 与前端 js 进行通讯的代码的解耦（<a href="https://github.com/zhangwentao/ExternalEvent" target="_blank">ExternalEvent</a>）。
+							</p>
+						</li>
+						<li><a href="http://photo.renren.com/photo/200208111/photo-4024059356/v7" target="_blank">人人相册flash上传组件设计开发</a>
+							<p>	
+							负责设计编写 flash 模块，支持图片的分块，断点续传，<a href="https://github.com/zhangwentao/pic_upload" target="_blank">代码</a>。
+							</p>
+						</li>
+						<li>人人widget设计开发
+							<p>负责设计编写一个仿 mac 系统的 dashboard 应用，放在人人网首页。其中 widget 作为独立模块进行加载。可以通过继承原有类，实现特定接口进行新的 widget 的开发。widget 位置及内容通过 sharedObject 可以进行跨页面数据同步。</p>
+						</li>
 					</ul>
 				</li>
 				<li class="company">
 					<h3>东田教育</h3>
 					<p class="position">flash as3 开发工程师 <span class="time">2009.3-2010.6</span></p>
 					<ul>
-						<li>电子书翻页效果模块开发</li>
-						<li>电子书交互开发</li>
-						<li>JSFL 脚本开发</li>
+						<li><a href="http://www.gopep.cn/#_l=/ebook;pid=70" target="_blank">电子书翻页效果模块及控件模块开发(选择小学专区然后代开语文课本)</a>
+						<p>
+							负责设计编写flash 电子书翻页效果。主要就是实现一个页面图片加载器及模拟纸张翻页的效果。编写便签，荧光笔工具，所有小工具为独立swf，异步加载后初始化的主程序。内容通过 flash 的 sharedObject 保存到用户本地。
+						</p>
+						</li>
+						<li>JSFL 脚本开发
+							<p>
+								电子书制作中，实现大量的重复工作。语法为 javascript ，宿主为 flashIDE。
+							</p>
+						</li>
 					</ul>
 				</li>
 			</ul>
